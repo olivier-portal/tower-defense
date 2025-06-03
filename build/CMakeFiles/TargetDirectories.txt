@@ -1,0 +1,3 @@
+C:/Users/porta/OneDrive/Documents/La plateforme/C++/Tower defense game/tower-defense/build/CMakeFiles/tower-defense.dir
+C:/Users/porta/OneDrive/Documents/La plateforme/C++/Tower defense game/tower-defense/build/CMakeFiles/edit_cache.dir
+C:/Users/porta/OneDrive/Documents/La plateforme/C++/Tower defense game/tower-defense/build/CMakeFiles/rebuild_cache.dir
