@@ -1,3 +1,7 @@
+.idea/
+build/
+CMakeLists.txt
+
 # Prerequisites
 *.d
 
