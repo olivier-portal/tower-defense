@@ -1,6 +1,6 @@
-/build
-/.idea
-/CMakeLists.txt
+.idea/
+build/
+CMakeLists.txt
 
 # Prerequisites
 *.d
