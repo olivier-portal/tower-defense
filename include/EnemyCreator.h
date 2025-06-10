@@ -38,7 +38,7 @@ public:
      * @param score Points awarded when the enemy is defeated
      * @throws std::invalid_argument if the path is empty
      */
-    EnemyCreator(const std::string& id, const std::deque <sf::Vector2i>& path, float speed, int lives, const int credit, const int score);
+    EnemyCreator(const std::string& id, const std::deque <sf::Vector2i>& path, float speed, int lives, int credit, int score, std::string sprite = "");
 
     /**
      * @brief Virtual destructor for proper inheritance cleanup
@@ -225,6 +225,7 @@ protected:
     bool isArrived = false;                        ///< Whether the enemy has reached its destination
     const int credit;                              ///< Credits awarded when defeated
     const int score;                               ///< Points awarded when defeated
+    std::string sprite;                            ///< Sprite sheet name
 };
 
 #endif //ENEMY_CREATOR_H

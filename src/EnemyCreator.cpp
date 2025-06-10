@@ -6,7 +6,7 @@
 
 // ==================== Constructor ====================
 // Initializes enemy with base attributes and starts its path
-EnemyCreator::EnemyCreator(const std::string& id, const std::deque <sf::Vector2i>& path, float speed, int lives, const int credit, const int score) : id(id), path(path), speed(speed), lives(lives), credit(credit), score(score) {
+EnemyCreator::EnemyCreator(const std::string& id, const std::deque <sf::Vector2i>& path, float speed, int lives, const int credit, const int score, const std::string sprite) : id(id), path(path), speed(speed), lives(lives), credit(credit), score(score), sprite(sprite) {
     advancePath();
 };
 
