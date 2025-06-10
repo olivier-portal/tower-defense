@@ -1,4 +1,4 @@
-# UML Class Diagram for Tower Defense Game
+# UML Class Diagram for Tower Defense Game (mermaid.live)
 
 ```mermaid
 ---
