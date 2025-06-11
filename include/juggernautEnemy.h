@@ -1,10 +1,10 @@
 //
 // Created by gravy on 10/06/2025.
 //
-# include "EnemyCreator.h"
-
 #ifndef JUGGERNAUTENEMY_H
 #define JUGGERNAUTENEMY_H
+
+# include "EnemyCreator.h"
 
 /**
  * @class juggernautEnemy

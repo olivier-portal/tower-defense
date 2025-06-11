@@ -1,10 +1,10 @@
 //
 // Created by gravy on 10/06/2025.
 //
-# include "EnemyCreator.h"
-
 #ifndef GRUNTENEMY_H
 #define GRUNTENEMY_H
+
+# include "EnemyCreator.h"
 
 /**
  * @class gruntEnemy

@@ -1,6 +1,8 @@
 //
 // Created by gravy on 06/06/2025.
 //
+#ifndef ENEMY_CREATOR_H
+#define ENEMY_CREATOR_H
 
 #include <string>
 #include <deque>
@@ -10,8 +12,6 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Vector2.hpp>
 
-#ifndef ENEMY_CREATOR_H
-#define ENEMY_CREATOR_H
 /**
  * @file EnemyCreator.h
  * @brief Class responsible for creating and managing enemy entities in the tower defense game.
