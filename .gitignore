@@ -3,6 +3,9 @@ build/
 cmake-build-debug/
 CMakeLists.txt
 
+# thibault's debug folder
+cmake-build-debug-ucrt64-msys2
+
 # Prerequisites
 *.d
 
