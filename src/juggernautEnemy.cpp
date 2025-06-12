@@ -4,4 +4,4 @@
 
 #include "../include/juggernautEnemy.h"
 
-juggernautEnemy::juggernautEnemy(const std::string &id, const std::deque<sf::Vector2i> &path, float speed, int lives, const int credit, const int score, const std::string sprite) : EnemyCreator(id, path, speed, lives, credit, score, sprite) {}
+juggernautEnemy::juggernautEnemy(const std::string &id, const std::deque<sf::Vector2i> &path, float speed, int lives, const int credit, const int score, const std::string_view sprite) : EnemyCreator(id, path, speed, lives, credit, score, std::string(sprite)) {}

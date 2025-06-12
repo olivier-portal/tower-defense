@@ -4,6 +4,7 @@
 #ifndef GRUNTENEMY_H
 #define GRUNTENEMY_H
 
+#include<string_view>
 # include "EnemyCreator.h"
 
 /**
@@ -26,7 +27,7 @@ private:
     static constexpr int GRUNT_LIVES = 100;
     static constexpr int GRUNT_CREDIT = 10;
     static constexpr int GRUNT_SCORE = 50;
-    static constexpr std::string GRUNT_SPRITE = "grunt.png";
+    static constexpr std::string_view GRUNT_SPRITE = "grunt.png";
 
 public:
     /**
@@ -40,7 +41,7 @@ public:
      * @param score Score points awarded when defeated (default: 50)
      * @param sprite Sprite filename for rendering (default: "grunt.png")
      */
-    explicit gruntEnemy(const std::string& id, const std::deque <sf::Vector2i>& path, float speed = GRUNT_SPEED, int lives = GRUNT_LIVES, int credit = GRUNT_CREDIT, int score = GRUNT_SCORE, std::string sprite = GRUNT_SPRITE);
+    explicit gruntEnemy(const std::string& id, const std::deque <sf::Vector2i>& path, float speed = GRUNT_SPEED, int lives = GRUNT_LIVES, int credit = GRUNT_CREDIT, int score = GRUNT_SCORE, std::string_view sprite = GRUNT_SPRITE);
 };
 
 #endif //GRUNTENEMY_H

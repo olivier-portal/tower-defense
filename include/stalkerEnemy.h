@@ -26,7 +26,7 @@ private:
     static constexpr int STALKER_LIVES = 60;
     static constexpr int STALKER_CREDIT = 15;
     static constexpr int STALKER_SCORE = 75;
-    static constexpr std::string STALKER_SPRITE = "stalker.png";
+    static constexpr std::string_view STALKER_SPRITE = "stalker.png";
 
 public:
     /**
@@ -40,7 +40,7 @@ public:
      * @param score Score points awarded when defeated (default: 75)
      * @param sprite Sprite filename for rendering (default: "stalker.png")
      */
-    explicit stalkerEnemy(const std::string& id, const std::deque <sf::Vector2i>& path, float speed = STALKER_SPEED, int lives = STALKER_LIVES, int credit =  STALKER_CREDIT, int score = STALKER_SCORE, std::string sprite = STALKER_SPRITE);
+    explicit stalkerEnemy(const std::string& id, const std::deque <sf::Vector2i>& path, float speed = STALKER_SPEED, int lives = STALKER_LIVES, int credit =  STALKER_CREDIT, int score = STALKER_SCORE, std::string_view sprite = STALKER_SPRITE);
 };
 
 #endif //STALKERENEMY_H

@@ -27,9 +27,7 @@ namespace enemy_creator {
      * @param path Path that the enemy will follow
      * @return A unique pointer to the created enemy
      */
-    std::unique_ptr<EnemyCreator> createGrunt(const std::string& id, const std::deque<sf::Vector2i>& path) {
-        return std::make_unique<gruntEnemy>(id, path);
-    }
+    std::unique_ptr<EnemyCreator> createGrunt(const std::string& id, const std::deque<sf::Vector2i>& path);
 
     /**
      * @brief Creates a stalker enemy unit
@@ -37,9 +35,7 @@ namespace enemy_creator {
      * @param path Path that the enemy will follow
      * @return A unique pointer to the created enemy
      */
-    std::unique_ptr<EnemyCreator> createStalker(const std::string& id, const std::deque<sf::Vector2i>& path) {
-        return std::make_unique<stalkerEnemy>(id, path);
-    }
+    std::unique_ptr<EnemyCreator> createStalker(const std::string& id, const std::deque<sf::Vector2i>& path);
 
     /**
      * @brief Creates a juggernaut enemy unit
@@ -47,9 +43,7 @@ namespace enemy_creator {
      * @param path Path that the enemy will follow
      * @return A unique pointer to the created enemy
      */
-    std::unique_ptr<EnemyCreator> createJuggernaut(const std::string& id, const std::deque<sf::Vector2i>& path) {
-        return std::make_unique<juggernautEnemy>(id, path);
-    }
+    std::unique_ptr<EnemyCreator> createJuggernaut(const std::string& id, const std::deque<sf::Vector2i>& path);
 }
 
 

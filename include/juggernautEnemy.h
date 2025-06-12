@@ -26,7 +26,7 @@ private:
     static constexpr int JUGGERNAUT_LIVES = 200;
     static constexpr int JUGGERNAUT_CREDIT = 25;
     static constexpr int JUGGERNAUT_SCORE = 100;
-    static constexpr std::string JUGGERNAUT_SPRITE = "juggernaut.png";
+    static constexpr std::string_view JUGGERNAUT_SPRITE = "juggernaut.png";
 
 public:
     /**
@@ -40,7 +40,7 @@ public:
      * @param score Score points awarded when defeated (default: 100)
      * @param sprite Sprite filename for rendering (default: "juggernaut.png")
      */
-    explicit juggernautEnemy(const std::string& id, const std::deque <sf::Vector2i>& path, float speed = JUGGERNAUT_SPEED, int lives = JUGGERNAUT_LIVES, int credit = JUGGERNAUT_CREDIT, int score = JUGGERNAUT_SCORE, std::string sprite = JUGGERNAUT_SPRITE);
+    explicit juggernautEnemy(const std::string& id, const std::deque <sf::Vector2i>& path, float speed = JUGGERNAUT_SPEED, int lives = JUGGERNAUT_LIVES, int credit = JUGGERNAUT_CREDIT, int score = JUGGERNAUT_SCORE, std::string_view sprite = JUGGERNAUT_SPRITE);
 };
 
 #endif //JUGGERNAUTENEMY_H

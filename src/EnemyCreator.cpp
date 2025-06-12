@@ -7,7 +7,12 @@
 // ==================== Constructor ====================
 // Initializes enemy with base attributes and starts its path
 EnemyCreator::EnemyCreator(const std::string& id, const std::deque <sf::Vector2i>& path, float speed, int lives, const int credit, const int score, const std::string sprite) : id(id), path(path), speed(speed), lives(lives), credit(credit), score(score), sprite(sprite) {
+    if (path.empty()) {
+        throw std::invalid_argument("Path cannot be empty");
+    }
     advancePath();
+    // 32.0f is the tile size used in the game by default
+    pixelPosition = pixelPositionFromGridPosition(gridPosition.value(), 32.0f);
 };
 
 // ==================== Basic Getters ====================
