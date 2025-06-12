@@ -11,8 +11,8 @@ EnemyCreator::EnemyCreator(const std::string& id, const std::deque <sf::Vector2i
         throw std::invalid_argument("Path cannot be empty");
     }
     advancePath();
-    // 32.0f is the tile size used in the game by default
-    pixelPosition = pixelPositionFromGridPosition(gridPosition.value(), 32.0f);
+    // 32.0f is the tile size used in the game
+    pixelPosition = pixelPositionFromGridPosition(gridPosition.value(), 64.0f);
 };
 
 // ==================== Basic Getters ====================
